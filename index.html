@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Super hero</title>
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <img src="./assets/img/sh2.jpg" alt="logo" class="img-thumbnail" style="width: 4rem;">
+        </div>
+      </nav>
+    <!--title-->
+    <header class="container mt-4">
+        <img src="./assets/img/sh1.jpg" alt="" class="img-fluid">
+        <h2>Encuentra a tu heroe!</h2>
+    </header>
+    <!--busqueda-->
+    <section class="container mt-4">
+        <form action="/submit" id="heroForm">
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                  <label for="inputHeronumber" class="col-form-label">Ingresa el número de  a buscar</label>
+                </div>
+                <div class="col-auto">
+                  <input type="text" id="heroID" class="form-control">
+                </div>
+                <div class="col-auto">
+                  <span id="heroConfirm" class="form-text text-danger">
+                  </span>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3" id="buttonHero">Buscar</button>
+        </form>
+    </section>  
+    <!--mostrar heroe-->
+    <section class="container my-4">
+        <div class="row">
+            <div class="col-12 col-md-6 px-2" id="showHero">
+            </div>
+            <div class="col-12 col-md-6 px-2" id="showStats">
+                
+            </div>
+        </div>
+    </section>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
